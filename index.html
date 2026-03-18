@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Student Registration Form</h2>
+
+    <form id="registrationForm">
+
+      <div class="form-group">
+        <label>First Name *</label>
+        <input type="text" id="firstName" placeholder="Enter first name" required>
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label>Middle Name</label>
+        <input type="text" id="middleName" placeholder="Enter middle name">
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label>Last Name *</label>
+        <input type="text" id="lastName" placeholder="Enter last name" required>
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label>Course *</label>
+        <select id="course" required>
+          <option value="">Select Course</option>
+          <option>BS Computer Science</option>
+          <option>BS Information Technology</option>
+          <option>BS Information Systems</option>
+        </select>
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label>Password *</label>
+        <input type="password" id="password" placeholder="Enter password">
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label>Gender *</label>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="gender" value="Male"> Male
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="gender" value="Female"> Female
+          </label>
+        </div>
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label class="checkbox-label">
+          <input type="checkbox" id="terms">
+          I accept Terms &amp; Conditions *
+        </label>
+        <small class="error"></small>
+      </div>
+
+      <button type="submit">Register</button>
+
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
